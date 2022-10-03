@@ -4,7 +4,7 @@ author: JFG
 description: A very small static site generator.
 ---
 
-This is `makessg`, a very small static site generator built with `make` and `pandoc`.
+This is `makessg`, [a very small static site generator](https://github.com/joefg/makessg) built with `make` and `pandoc`.
 
 ![Entropy will get us all in the end.](static/scott.webp)
 
