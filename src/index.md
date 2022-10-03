@@ -10,6 +10,8 @@ This is `makessg`, [a very small static site generator](https://github.com/joefg
 
 Reject database-driven content-management systems, embrace small `Makefile`.
 
+---
+
 ## How To Use
 
 Consider this repo.
@@ -32,9 +34,10 @@ Consider this repo.
 
 ```
 SITENAME = "makessg"
+SITELOC  = "http://joefg.github.io/makessg"
 
 SRC = src
-DST = build
+DST = docs
 TEMPLATE = $(SRC)/templates/template.html
 ```
 
