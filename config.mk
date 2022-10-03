@@ -2,5 +2,5 @@ SITENAME = "makessg"
 SITELOC  = "http://joefg.github.io/makessg"
 
 SRC = src
-DST = build
+DST = docs
 TEMPLATE = $(SRC)/templates/template.html
