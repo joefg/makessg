@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>About makessg</title>
+	<link rel="stylesheet" href="https://edwardtufte.github.io/tufte-css/tufte.css" type="text/css">
+	<meta name="description" content="A very small static site generator.">
+</head>
+
+<body>
+	<header>
+		<nav>
+			<a href='http://joefg.github.io/makessg'>Home</a>
+		</nav>
+		<h1>makessg</h1>
+	</header>
+	<main>
+					<p>This is <code>makessg</code>, a very small static site generator
+built with <code>make</code> and <code>pandoc</code>.</p>
+<p><img src="static/scott.webp"
+alt="Entropy will get us all in the end." /></p>
+<p>Reject database-driven content-management systems, embrace small
+<code>Makefile</code>.</p>
+<h2 id="how-to-use">How To Use</h2>
+<p>Consider this repo.</p>
+<pre><code>.
+├── build
+├── config.mk
+├── Makefile
+└── src
+    ├── index.md
+    ├── static
+    └── templates
+        └── template.html</code></pre>
+<ol start="0" type="1">
+<li>Install <code>make</code> and <code>pandoc</code>.</li>
+<li>Copy the <code>Makefile</code> into the root of your
+repository.</li>
+<li>Creat a <code>config.mk</code>, which should contain the title of
+your site, along with the location of the <code>src</code>,
+<code>build</code>, and <code>template</code> directories. For
+reference, this is the one used for this site.</li>
+</ol>
+<pre><code>SITENAME = &quot;makessg&quot;
+
+SRC = src
+DST = build
+TEMPLATE = $(SRC)/templates/template.html</code></pre>
+<ol start="3" type="1">
+<li>Add a page. Start with <code>index.md</code>.</li>
+<li>Run <code>make</code>.</li>
+</ol>
+<hr />
+<h2 id="media">Media</h2>
+<p>Add your media to <code>src/static</code>, then link to it using
+Markdown.</p>
+<hr />
+<h2 id="templates">Templates</h2>
+<p>The default template is in <code>src/templates/template.html</code>.
+It uses the <a href="https://www.cssbed.com/tufte/">tufte</a> CSS pack,
+and if it's not to your taste, you can create your own templates by
+copying the default <code>template.html</code> and either adding your
+own CSS, or using CSS from <a href="https://www.cssbed.com/">CSS
+Bed</a>.</p>
+<p>To extend the template, you can add <code>pandoc</code> templates to
+the HTML document. A list of available <a
+href="https://pandoc.org/MANUAL.html#templates">template syntax is
+available here</a>.</p>
+	</main>
+	<hr>
+	<footer>
+		<p>Site made with <code>makessg</code>.  (c) JFG. </p>
+	</footer>
+</body>
+</html>
