@@ -6,8 +6,6 @@ description: A very small static site generator.
 
 This is `makessg`, [a very small static site generator](https://github.com/joefg/makessg) built with `make` and `pandoc`.
 
-![Entropy will get us all in the end.](static/scott.webp)
-
 Reject database-driven content-management systems, embrace small `Makefile`.
 
 ---
@@ -30,7 +28,7 @@ Consider this repo.
 
 0. Install `make` and `pandoc`.
 1. Copy the `Makefile` into the root of your repository.
-2. Creat a `config.mk`, which should contain the title of your site, along with the location of the `src`, `build`, and `template` directories. For reference, this is the one used for this site.
+2. Create a `config.mk`, which should contain the title of your site, along with the location of the `src`, `build`, and `template` directories. For reference, this is the one used for this site.
 
 ```
 SITENAME = "makessg"
@@ -49,6 +47,10 @@ TEMPLATE = $(SRC)/templates/template.html
 ## Media
 
 Add your media to `src/static`, then link to it using Markdown.
+
+![Entropy will get us all in the end.](static/burnham.webp)
+
+*Photo: Marshes near Burnham Norton, Norfolk.*
 
 ---
 

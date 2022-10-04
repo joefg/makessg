@@ -18,8 +18,6 @@
 					<p>This is <code>makessg</code>, <a
 href="https://github.com/joefg/makessg">a very small static site
 generator</a> built with <code>make</code> and <code>pandoc</code>.</p>
-<p><img src="static/scott.webp"
-alt="Entropy will get us all in the end." /></p>
 <p>Reject database-driven content-management systems, embrace small
 <code>Makefile</code>.</p>
 <hr />
@@ -38,7 +36,7 @@ alt="Entropy will get us all in the end." /></p>
 <li>Install <code>make</code> and <code>pandoc</code>.</li>
 <li>Copy the <code>Makefile</code> into the root of your
 repository.</li>
-<li>Creat a <code>config.mk</code>, which should contain the title of
+<li>Create a <code>config.mk</code>, which should contain the title of
 your site, along with the location of the <code>src</code>,
 <code>build</code>, and <code>template</code> directories. For
 reference, this is the one used for this site.</li>
@@ -57,6 +55,9 @@ TEMPLATE = $(SRC)/templates/template.html</code></pre>
 <h2 id="media">Media</h2>
 <p>Add your media to <code>src/static</code>, then link to it using
 Markdown.</p>
+<p><img src="static/burnham.webp"
+alt="Entropy will get us all in the end." /></p>
+<p><em>Photo: Marshes near Burnham Norton, Norfolk.</em></p>
 <hr />
 <h2 id="templates">Templates</h2>
 <p>The default template is in <code>src/templates/template.html</code>.
