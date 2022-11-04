@@ -16,7 +16,7 @@ Consider this repo.
 
 ```
 .
-├── build
+├── docs
 ├── config.mk
 ├── Makefile
 └── src
@@ -28,7 +28,7 @@ Consider this repo.
 
 0. Install `make` and `pandoc`.
 1. Copy the `Makefile` into the root of your repository.
-2. Create a `config.mk`, which should contain the title of your site, along with the location of the `src`, `build`, and `template` directories. For reference, this is the one used for this site.
+2. Create a `config.mk`, which should contain the title of your site, along with the location of the `src`, `dst`, and `template` directories. For reference, this is the one used for this site.
 
 ```
 SITENAME = "makessg"
